@@ -35,11 +35,7 @@ const portafolioData: PortafolioData[] = [
 	}
 ]
 
-const PortafolioData: React.FC<PortafolioData> = ({ title, image, description }) => {
-    const handleClick = () => {
-        alert('Learn More clicked!');
-    };
-
+const PortafolioItem: React.FC<PortafolioData> = ({ title, image, description }) => {
     return (
         <Box>
             <Typography variant="h1" style={{ fontSize: '1.5rem', marginBottom: '10px', textAlign: 'center', color: '#333' }}>{title}</Typography>
@@ -70,7 +66,7 @@ const Portafolio = () => {
 					<Grid item xs={12} md={6}>
 						<Box display="flex" flexDirection="column" gap={2}>
 							{portafolioData.map((item, index) => (
-								<PortafolioData key={index} {...item} />
+								<PortafolioItem key={index} {...item} />
 							))}
 
 							<ContactAuthorSection />

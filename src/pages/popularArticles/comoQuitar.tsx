@@ -6,7 +6,6 @@ import { Extra } from "../components/extra"
 import { Layouts } from "../../components/layouts/layouts"
 import { CustomBreadcrumbs } from "../components/breadcrumbs";
 import { PopularArticles } from "../components/popularArticles"
-import { BlogItem } from "../components/blogitem"
 import ContactAuthorSection from "../components/ContactAuthorSection";
 import Malware from '../../assets/image/popularArticules/malware.jpg';
 import { SearchForm } from "../components/searchForm"
@@ -90,15 +89,6 @@ const SeoWrapper = styled(Box)({
 	paddingTop: '10px',
 	display: 'flex',
 	flexDirection: 'column',
-});
-
-const Block = styled(Box)({
-	padding: '10px',
-	boxShadow: '0 0 0 0.5px #000',
-	borderRadius: '5px',
-	color: 'darkred',
-	fontFamily: 'monospace', // Optional: Change font for code
-	whiteSpace: 'pre-wrap', // Optional: Preserve whitespace
 });
 
 export { ComoQuitar }	

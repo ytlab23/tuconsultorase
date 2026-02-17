@@ -5,7 +5,6 @@ import { Grid, Box } from "@mui/material"
 import { Extra } from "../components/extra"
 import { Layouts } from "../../components/layouts/layouts"
 import { CustomBreadcrumbs } from "../components/breadcrumbs"
-import { MoreArticles } from "../components/moreArticles"
 import { PopularArticles } from "../components/popularArticles"
 import { BlogItem } from "../components/blogitem"
 

@@ -8,7 +8,6 @@ import {
   Typography,
   IconButton,
   List,
-  ListItem,
   ListItemText,
   Collapse,
   Fade

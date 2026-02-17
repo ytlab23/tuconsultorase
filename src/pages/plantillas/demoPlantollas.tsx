@@ -8,7 +8,7 @@ import { TopA1, TopA2, TopA3, TopB1, TopB2, TopB3, TopC1, TopC2, TopC3 } from '.
 import { BtnDemoplantillas } from "../../components/button/demoplantillas";
 import { Layouts } from "../../components/layouts/layouts";
 
-const PlantillasDemoData: PlantillasDemoData[] = [
+const plantillasDemoData: PlantillasDemoItem[] = [
     {
         title: 'Articulo A1',
         image: TopA1,
@@ -83,7 +83,7 @@ const PlantillasDemoData: PlantillasDemoData[] = [
     }
 ];
 
-interface PlantillasDemoData {
+interface PlantillasDemoItem {
     title: string;
     image: string;
     description: string[];
@@ -100,7 +100,7 @@ const DemoPlantillas = () => {
             <DemoPlantillaWrapper>
                 <Hero />
                 <Grid container spacing={2}>
-                    {PlantillasDemoData.map((item, index) => (
+                    {plantillasDemoData.map((item, index) => (
                         <Grid item xs={12} sm={6} md={4} key={index}>
                             <DemoItem {...item} btn={
                                 <Box>

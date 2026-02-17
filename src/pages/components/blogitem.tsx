@@ -1,6 +1,5 @@
 import { Box, Typography } from "@mui/material";
 import { BlogHeader, BlogItemWrapper } from "../../components/blog/blog";
-import { CustomActiveLink } from "../../components/Link/customLink";
 
 const BlogItem = ({ title, description }: BlogData) => {
     return (

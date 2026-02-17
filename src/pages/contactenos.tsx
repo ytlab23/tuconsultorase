@@ -32,11 +32,7 @@ const contactenosData: ContactenosData[] = [
 	}
 ]
 
-const ContactenosData: React.FC<ContactenosData> = ({ title, image, description }) => {
-	const handleClick = () => {
-		alert('Learn More clicked!');
-	};
-
+const ContactenosItem: React.FC<ContactenosData> = ({ title, image, description }) => {
 	return (
 		<Box>
 			<Typography variant="h1" style={{ fontSize: '1.5rem', marginBottom: '10px', textAlign: 'center', color: '#333' }}>{title}</Typography>
@@ -67,7 +63,7 @@ const Contactenos = () => {
 					<Grid item xs={12} md={6}>
 						<Box display="flex" flexDirection="column" gap={2}>
 							{contactenosData.map((item, index) => (
-								<ContactenosData key={index} {...item} />
+								<ContactenosItem key={index} {...item} />
 							))}
 						</Box>
 					</Grid>

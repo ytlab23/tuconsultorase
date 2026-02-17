@@ -1,4 +1,4 @@
-import { Box, Button, Grid, Typography } from "@mui/material";
+import { Box, Grid, Typography } from "@mui/material";
 import { styled } from "@mui/material/styles";
 
 import { Hero } from "./components/hero";
